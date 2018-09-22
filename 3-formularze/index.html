@@ -9,13 +9,13 @@
 <body>
     <form action="https://formspree.io/karol.a.nowakowski@gmail.com" method="POST">
         <label for="imie">Imię:</label><br>
-        <input type="text" name="imie" id="imie"><br>
+        <input type="text" name="imie" id="imie" pattern="[a-zA-Z ]{1,15}" title="Username should only contain lowercase/uppercase letters."><br>
         <label for="nazwisko">Nazwisko:</label><br>
-        <input type="text" name="Nazwisko" id="nazwisko"><br>
+        <input type="text" name="Nazwisko" id="nazwisko" pattern="[a-zA-Z ]{1,15}" title="Username should only contain lowercase/uppercase letters."><br>
         <label for="email">Email:</label><br>
-        <input type="email" name="mail" id="email"><br>
+        <input type="email" name="mail" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
         <label for="telefon">telefon:</label><br>
-        <input type="number" name="telefon" id="telefon"><br><br>
+        <input type="number" name="telefon" id="telefon" pattern="[0-9]+"><br><br>
         <label for="wiadomosc">wiadomość:</label><br>
         <textarea maxlength="1000" name="message" id="wiadomosc" rows="3" cols="22" wrap="hard"></textarea><br>
         <p>Płeć:</p>
