@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>formularz</title>
 </head>
+
 <body>
-    <form action="">
-       <input type="submit" value="wyslij"/> 
+    <form action="https://formspree.io/karol.a.nowakowski@gmail.com" method="POST">
+        <label for="imie">Imię:</label><br>
+        <input type="text" name="imie" id="imie"><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" name="Nazwisko" id="nazwisko"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="mail" id="email"><br>
+        <label for="telefon">telefon:</label><br>
+        <input type="number" name="quantity" id="telefon"><br><br>
+        <label for="wiadomosc">wiadomość:</label><br>
+        <textarea maxlength="1000" name="message" id="wiadomosc" rows="3" cols="22" wrap="hard"></textarea><br>
+        <p>Płeć:</p>
+        <label><input type="radio" name="gender" id="mezczyzna" value="mezczyzna" checked>Mężczyzna</label><br>
+        <label for="kobieta"></label>
+        <input type="radio" name="gender" id="kobieta" value="kobieta">Kobieta<br><br>
+        <p>Kraj:</p>
+        <label for="kraj">
+            <select name="kraj" id="kraj">
+                <option value="Francja">Francja</option>
+                <option value="Polska" selected>Polska</option>
+                <option value="Niemcy">Niemcy</option>
+            </select>
+        </label>
+        <input type="submit" value="wyslij" />
     </form>
-    
 </body>
+
 </html>
